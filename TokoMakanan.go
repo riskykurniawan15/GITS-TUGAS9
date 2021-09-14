@@ -8,14 +8,15 @@ import (
 var menu []string = []string{"Tahu", "Tempe", "Sambal", "Nasi", "Lele", "Ayam"}
 
 func main(){
+	// Risky Kurniawan - ARS University
 	var orders []string
-	fmt.Println("=================================")
-	fmt.Println("     TOKO MAKANAN INDONESIA")
-	fmt.Println("=================================")
+	fmt.Println("===================================")
+	fmt.Println("      TOKO MAKANAN INDONESIA")
+	fmt.Println("===================================")
 	for _, list := range menu {
 		fmt.Println(list)
 	}
-	fmt.Println("=================================")
+	fmt.Println("===================================")
 
 	PesanLagi:
 	var pesanan, next string = "",""
@@ -41,7 +42,10 @@ func main(){
 	for _, order := range orders {
 		fmt.Println("Pesanan anda : ",order)
 	}	
-	fmt.Println("=================================")
+	fmt.Println("===================================")
+	fmt.Println("        ** Terimakasih **")
+	fmt.Println("By Risky Kurniawan - ARS University")
+	fmt.Println("===================================")
 }
 
 func validation(pesanan string) (bool, string) {
